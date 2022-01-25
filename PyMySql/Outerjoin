@@ -1,0 +1,15 @@
+SELECT * FROM items LEFT OUTER JOIN ranking item_code = items.item_code
+
+items_code title      item_code       ranking
+2           title2    2               2
+1           title1    1               1
+4           title4    null            null
+3           title3    null            null
+
+#INNER JOIN은 해당되는 데이터만 결합하나 OUTER JOIN은 우선 가져온 후에 결합함.
+
+SELECT * FROM items RIGHT OUTER JOIN ranking item_code = items.item_code
+
+items_code  ranking   item_code      title
+2           2         2               title2
+1           1         1               title1

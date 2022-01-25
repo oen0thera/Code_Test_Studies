@@ -1,0 +1,9 @@
+commissionEmploy extends Object
+public doulbe earnings()
+{
+return commisionrate *sales
+}
+
+get, set Method
+
+Baseplus commission
